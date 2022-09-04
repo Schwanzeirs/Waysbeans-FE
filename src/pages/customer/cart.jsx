@@ -131,7 +131,7 @@ export default function Cart() {
                     <div className='line mb2' />
                     {dataCart.map((item, index) => (
                     <div className='flex' key={index}>
-                        <img src={`http://localhost:5000/uploads/` + item.product?.image} alt="" className='mb1 cart-img' />
+                        <img src={item.product?.image} alt="" className='mb1 cart-img' />
                         <div>
                             <p className='ml1'>{item.product?.name}</p>
                             <div className='flex'>

@@ -74,7 +74,7 @@ export default function Profile() {
                         <div key={index}>
                             {item.cart.map((itm,idx) => (
                             <div className='transaction flex ml6-75'>
-                                <img src={`http://localhost:5000/uploads/` + itm.product?.image} alt="" className='product-transaction' />
+                                <img src={itm.product?.image} alt="" className='product-transaction' />
                                 <div>
                                     <p className='transaction-title mt1-5'>{itm.product?.name}</p>
                                     <p className='transaction-date mt1-25'><strong></strong></p>
