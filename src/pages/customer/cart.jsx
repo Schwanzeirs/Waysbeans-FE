@@ -109,7 +109,7 @@ export default function Cart() {
 
     useEffect(() => {
         const midtransScriptUrl = "https://app.sandbox.midtrans.com/snap/snap.js";
-        const myMidTransClientKey = "SB-Mid-client-IkWUqIYD0hGO_8sZ"
+        const myMidTransClientKey = process.env.REACT_APP_MIDTRANS_CLIENT_KEY;
 
         let scriptTag = document.createElement("script");
         scriptTag.src = midtransScriptUrl;
